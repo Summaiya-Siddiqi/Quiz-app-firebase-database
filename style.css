@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+.mainBox{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom , #8fc7df , #8bccb1 , #65c7d8);
+}
+
+/* /////QUIZ FORM START//// */
+.quizForm {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 8px;
+    border-radius: 8px;
+
+}
+
+@media screen and (min-width: 300px) {
+    .quizForm {
+        width: 96%;
+       
+        
+    }
+  }
+
+  
+
+@media screen and (min-width: 312px) {
+    .quizForm {
+        width: 96%;
+       
+        
+    }
+  }
+
+@media screen and (min-width: 320px) {
+    .quizForm {
+        width: 90%;
+       
+        
+    }
+  }
+
+  
+@media screen and (min-width: 720px) {
+    .quizForm {
+        width:40%;
+       
+        
+    }
+  }
+.formHeading{
+    border: 2px solid #0a422b;
+    padding: 8px;
+    color: #060a09;
+    text-align: center;
+}
+.quizForm div{
+    width: 100%;
+
+}
+.quizForm div input{
+    width: 100%;
+    display: block;
+    height: 45px;
+    line-height: 10px;
+    outline: none;
+    margin-top: 10px;
+    padding: 12px 0px;
+    border: none;
+    border: 2px solid #0a422b;
+    background-color:transparent ;
+    font-size: 20px;
+    color:#060a09;
+    font-family: 'Courier New', Courier, monospace;
+}
+.quizForm div input::placeholder{
+    font-family: sans-serif;
+}
+.quizForm div small{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: red;
+    font-size: large;
+}
+.quizForm div button{
+    display: block;
+    margin-left: auto;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    background-color: #0a422b;
+    color: white;
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.quizForm.hide{
+    display: none;
+}
+
+
+
+/* /////   QUIZ START BUTTON START////// */
+.quizStartBtn{
+    width: 250px;
+    /* border: 1px solid black; */
+    padding: 8px;
+}
+.quizStartBtn button{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: #0a422b;
+    color: white;
+    font-size: large;
+    padding: 8px ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quizStartBtn.hide{
+    display: none;
+}
+
+
+
+/* /////QUIZ QUESTION AND OPTION START//// */
+.QuestBox{
+    /* border: 2px solid red; */
+    width: 40%;
+    border-radius: 8px 8px 0 0 ;
+    border: 1px solid #0a422b;;
+}
+
+@media screen and (min-width: 300px) {
+    .QuestBox {
+        width: 96%;
+       
+        
+    }
+  }
+
+@media screen and (min-width: 312px) {
+    .QuestBox {
+        width: 96%;
+       
+        
+    }
+  }
+@media screen and (min-width: 320px) {
+    .QuestBox {
+        width: 94%;
+       
+        
+    }
+  }
+  
+@media screen and (min-width: 720px) {
+    .QuestBox{
+        width: 45%;
+       
+        
+    }
+  }
+.QuestBox.hide{
+    display: none;
+    
+}
+.userInfo{
+    width: 100%;
+    /* border: 2px solid brown; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color:#0a422b;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 8px 8px 0 0 ;
+
+}
+
+.question{
+    /* border: 1px solid lime; */
+    width: 100%;
+    padding: 8px;
+}
+.question h2{
+    width: 100%;
+    padding: 8px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.question ul{
+    list-style: none;
+    width: 100%;
+}
+.question ul li{
+    width: 100%;
+    color:black;
+    border: 2px solid #0a422b;
+    font-size: large;
+    padding: 8px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: cursive;
+    }
+.question ul li.disabled{
+    pointer-events: none;
+}
+.question ul li.success{
+    background-color: green;
+    color: black;
+}
+.question ul li.wrong{
+    background-color: red;
+    /* opacity: 0.1; */
+}
+.quizFooter{
+    width: 100%;
+    background-color:#0a422b;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.quizFooter button{
+    width: 120px;
+    height: 40px;
+    /* margin-top: 10px ; */
+    /* margin-bottom: 10px ; */
+    background-color: black;
+    color: white;
+    font-size: medium;
+    padding: 3px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+.total_que{
+    color:#d3e2e9;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+
+
+
+/* ////////RESULT BOX START////// */
+
+.resultBox{
+    border: 2px solid #0a422b;
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+   
+@media screen and (min-width: 312px) {
+    .resultBox{
+        width: 90%;
+       
+        
+    }
+  }
+@media screen and (min-width: 320px) {
+    .resultBox{
+        width: 80%;
+       
+        
+    }
+  }
+    
+@media screen and (min-width: 720px) {
+    .resultBox{
+        width: 40%;
+       
+        
+    }
+  }
+.resultBox.hide{
+    display: none;
+}
+.resultImg{
+    max-width: 250px;
+}
+.congratsHeading{
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+}
+.congratsHeading h1{
+    color: #0a422b;
+    font-size: 30px;
+    margin: 10px 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.congratsHeading p{
+    margin: 10px 5px ;
+    color: white;
+    font-family: cursive;
+}
+.RightOption{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 5px;
+    align-items: center;
+}
+.RightOption p {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    color: #0a422b;
+    font-family: 'Courier New', Courier, monospace;
+}
+.RightOption p i{
+    font-size: 25px;
+    margin: 0 5px;
+}
+.resetBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 5px;
+}
+.resetBtn button{
+     width: 120px;
+    height: 40px;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    background-color: #0a422b;;
+    color: white;
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+

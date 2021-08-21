@@ -1,0 +1,82 @@
+{
+  "Questions" : [
+     {
+    "Options" : {
+      "a" : "Hyper text markup Language",
+      "b" : "Hyper text programming Language",
+      "c" : "Hyper text styling Language",
+      "d" : "Hyper text scripting Language"
+    },
+    "Question" : "HTML stand for ?",
+    "answer" : "Hyper text markup Language",
+    "num" : 1
+  } ,
+  {
+    "Options" : {
+      "a": "Common Style Sheet",
+      "b": "Colorful Style Sheet",
+      "c": "Computer Style Sheet",
+      "d": "Cascading Style Sheet"
+    },
+    "Question" : "What does CSS stand for ?",
+    "answer" : "Cascading Style Sheet",
+    "num" : 2
+  } ,
+  {
+    "Options" : {
+      "a":"eXtensible Markup Language",
+      "b": "eXecutable Multiple Language",
+      "c": "eXTra Multi-Program Language",
+      "d": "eXamine Multiple Language"
+    },
+    "Question" : "What does XML stand for?",
+    "answer" : "eXtensible Markup Language",
+    "num" : 3
+  } ,
+  {
+    "Options" : {
+      "a": "Object-Oriented ",
+      "b": "Object-Base",
+      "c": "Assembly Languages",
+      "d": "high Level"
+    },
+    "Question" : "Which type of JavaScript Languages is ?",
+    "answer" : "Object-Base",
+    "num" : 4
+
+  },
+  {
+    "Options" : {
+      "a": "Node.js", 
+      "b": "TypeScript",
+      "c": "npm",
+      "d": "none"
+    },
+    "Question" : "Which one of these is a JavaScript package manager?",
+    "answer" : "npm",
+    "num" : 5
+  },
+  {
+    "Options" : {
+      "a": "Douglas Crockford",
+      "b": "Sheryl Sandberg",
+      "c":  "Brendan Eich",
+      "d":  "James Charles"
+    },
+    "Question" : "Who invented JavaScript:",
+    "answer" : "Brendan Eich",
+    "num" : 6
+  },
+  {
+    "Options" : {
+      "a":"Head, Title, HTML, Body",
+      "b": "Title, Head, HTML, body",
+      "c": "HTML, Head, Title, Body",
+      "d": "HTML, Title , Head,  Body"
+    },
+    "Question" :  "The correct sequence of HTML tags for starting a webpage is",
+    "answer" : "HTML, Head, Title, Body",
+    "num" : 7
+  }
+]
+}

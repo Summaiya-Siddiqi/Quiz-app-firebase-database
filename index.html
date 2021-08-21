@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS QUIZ APP</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+
+    <div class="mainBox">
+        <!-- User info Form -->
+        <section class="quizForm">
+            <div class="formHeading">
+                <h2>QUIZ FORM</h2>
+                <p>Please Fill the form</p>
+                <p><b>Note!</b>You have 50 Sec to complete the quiz</p>
+            </div>
+            <div>
+                <input type="text" id="Name" placeholder=" Enter Your Name...">
+               
+            </div>
+
+
+            <div>
+                <input type="text" id="Email" placeholder=" Enter Your Email...">
+              
+            </div>
+
+            <div>
+                <input type="text" id="Phone" placeholder=" Enter Your Phone Number...">
+              
+            </div>
+
+            <div>
+                <input type="text" id="Institute" placeholder=" Enter Your Institute Name...">
+           
+            </div>
+
+            <div>
+                <button onclick="onSubmit()">Submit</button>
+            </div>
+
+        </section>
+       
+
+      <!-- Quiz start Button -->
+        <section class="quizStartBtn hide">
+            <button id="quizBtn">QUIZ START?</button>
+        </section>
+  
+
+          <!-- Header of userInfo with timer -->
+        <section class="QuestBox hide">
+
+            <section class="userInfo">
+                <div class="userName">
+                    <p id="setUserName">Name: </p>
+                    <p id="setEmail">Email: </p>
+                </div>
+                <div class="timer" id="count">
+                    <p>Time Left: 00</p>
+                </div>
+            </section>
+
+               <!-- Question and Option  -->
+            <section class="question">
+
+                <h2 id="Quizquestion"><h2>
+                <ul class="optionUl">
+                    <li class="option"> </li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                </ul>
+            </section>
+
+            <!-- Footer with Ques number and next Ques button -->
+            <section class="quizFooter">
+                <div class="total_que">
+                        <!-- Here I've inserted the ques number from JavaScript -->
+                </div>
+
+                <div class="nextQues">
+                    <button onclick="nextQuestion()" id="nextQuest">NEXT QUES</button>
+                </div>
+
+                </section>
+        </section>
+
+               <!-- Result Box -->
+            <section class="resultBox hide" id="resultMainBox">
+
+                <div class="resultImg">
+                    <img src="img/result1.png" width="100%"  alt="">
+                </div>
+
+                <div class="congratsHeading">
+                    <h1>Quiz is Completed!</h1>
+                </div>
+               
+                <div class="score_text">
+                    <!-- Here I've inserted Score Result from JavaScript -->
+                </div>
+
+                <div class="resetBtn">
+                    <button onclick="window.location.reload()"> Restart Quiz</button>
+                </div>
+            </section>
+
+        </div>
+
+
+        
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDTJqmsRN016tPokzZflbBzocorSj6jh3k",
+    authDomain: "quiz-app-firebase-12.firebaseapp.com",
+    databaseURL: "https://quiz-app-firebase-12-default-rtdb.firebaseio.com",
+    projectId: "quiz-app-firebase-12",
+    storageBucket: "quiz-app-firebase-12.appspot.com",
+    messagingSenderId: "359596896968",
+    appId: "1:359596896968:web:d45b8fc0f3ef5c41902bfd"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</body>
+<script src="app.js"></script>
+
+</html>
